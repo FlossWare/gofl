@@ -1,0 +1,1 @@
+# GOFL - Gang of Four - Lambdas
