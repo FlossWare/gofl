@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<groupId>org.flossware</groupId>
+	<artifactId>gofl</artifactId>
+	<version>1.0</version>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<packaging>pom</packaging>
+
+	<name>FlossWare:  Gang of Four - Lambdas</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <java_version>1.8</java_version>
+        <org.apache.maven.plugins_maven-compiler-plugin_version>2.4</org.apache.maven.plugins_maven-compiler-plugin_version>
+
+        <junit_junit_version>4.13.2</junit_junit_version>
+        <org.mockito_mockito-all_version>1.10.19</org.mockito_mockito-all_version>
+	</properties>
+
+	<developers>
+		<developer>
+			<name>Scot P. Floess</name>
+			<id>flossy</id>
+			<email>flossware@gmail.com</email>
+			<organization>FlossWare</organization>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-4</timezone>
+		</developer>
+	</developers>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+                <version>${org.apache.maven.plugins_maven-compiler-plugin_version}</version>
+				<configuration>
+                    <source>${java_version}</source>
+                    <target>${java_version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit_junit_version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${org.mockito_mockito-all_version}</version>
+        </dependency>
+    </dependencies>
+</project>
